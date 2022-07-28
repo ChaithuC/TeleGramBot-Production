@@ -104,7 +104,7 @@ def quantity(options_msg, selected_product):
                                    inputt, metric)
 
 
-#FinaliseBill
+#FinaliseBill # need updates here
 def FinaliseBill(options_msg, selected_product, inputt, metric):
     Entered_Number = options_msg.text
     db_customer_check = test(Entered_Number)
