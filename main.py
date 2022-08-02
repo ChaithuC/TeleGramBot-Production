@@ -1,8 +1,10 @@
 # imports
+import os
 import telebot
 from keep_alive import keep_alive
 from communication import *
 import re
+api = os.environ['api']
 
 #enabling Bot
 bot = telebot.TeleBot(api)
@@ -104,7 +106,7 @@ def quantity(options_msg, selected_product):
                                    inputt, metric)
 
 
-#FinaliseBill # need updates here
+#FinaliseBill
 def FinaliseBill(options_msg, selected_product, inputt, metric):
     Entered_Number = options_msg.text
     db_customer_check = test(Entered_Number)

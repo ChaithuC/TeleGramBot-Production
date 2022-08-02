@@ -1,3 +1,4 @@
+import os
 import smtplib
 from csv import writer
 from datetime import datetime
@@ -5,11 +6,15 @@ import pytz
 import pandas as pd 
 
 
+
 #declarations
-email_address = 'nicecandy437@gmail.com'
-email_password = 'vtkwqnnvvvnvsbpb'
+# email_address = 'nicecandy437@gmail.com'
+# email_password = 'vtkwqnnvvvnvsbpb'
 mails = ['phinenice6@gmail.com' ,'221813601004@gitam.in', 'rvcharanchowdary7@icloud.com', 'pavansagar9010242946@gmail.com']
-api = '5479313682:AAEsDiC_ZeYy0yB1OYqcfQOo4MmlMCVXP9w'
+# api = '5479313682:AAEsDiC_ZeYy0yB1OYqcfQOo4MmlMCVXP9w'
+email_address = os.environ['email_address']
+email_password = os.environ['email_password']
+
 
 
 
