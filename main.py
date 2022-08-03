@@ -154,5 +154,5 @@ def FinaliseBill(options_msg, selected_product, inputt, metric):
 
 
 # #endless running shuru
-# keep_alive()
+keep_alive()
 bot.polling()
